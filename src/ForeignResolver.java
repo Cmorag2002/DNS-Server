@@ -12,7 +12,7 @@ public class ForeignResolver {
             String stringAddress = address.toString();
             return new DNSResponse(query.getName(), query.getType(), stringAddress.substring(stringAddress.lastIndexOf("/")+1));
         } catch (UnknownHostException e) {
-            e.printStackTrace();
+            System.out.println("Dominio: " + query.getName() + " | IP: no encontrada");
             return null;
         }
     }

@@ -20,15 +20,16 @@ public class DNSServer {
             System.out.println("Dirección del hostname: " + response.getAddress());
             /*
             byte[] data = new byte[1024];
-            DatagramPacket packet = new DatagramPacket(buffer, buffer.length);
+            DatagramPacket packet = new DatagramPacket(data, data.length);
             socket.receive(packet);
-            DNSQuery query = parseQuery(data);
+            DNSQuery query = parseQuery(packet);
             DNSResponse response = generateResponse(query);
-            //byte[] responseData = generateResponseData(response);
+            byte[] responseData = generateResponseData(response);
             InetAddress clientAddress = packet.getAddress();
             int clientPort = packet.getPort();
-            //DatagramPacket responsePacket = new DatagramPacket(responseData, responseData.length, clientAddress, clientPort);
-            //socket.send(responsePacket);
+            DatagramPacket responsePacket = new DatagramPacket(responseData, responseData.length, clientAddress, clientPort);
+            socket.send(responsePacket);
+
             */
         }
         catch (Exception e) {
@@ -44,14 +45,16 @@ public class DNSServer {
         }
     }
     /*
-    private DNSQuery parseQuery(byte[] data) {
+    private DNSQuery parseQuery(DatagramPacket data) {
         //Análisis de la consulta DNS desde el paquete DNS entrante
-        return new DNSQuery("www.example.com", 1);
+        String hostname = new String(data.getData(), 0, data.getLength());
+        return new DNSQuery(hostname, 1);
     }
 
     private byte[] generateResponseData(DNSResponse response) {
         //Generación del paquete DNS saliente a partir de la respuesta DNS
-        return new byte[1024];
+        byte[] data = new byte[1024];
+        return data = response.getName().getBytes();
     }
      */
 }
