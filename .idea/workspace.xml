@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="232a3861-9a46-4383-bde0-4f9d61b40146" name="Changes" comment="1.0">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hosts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/hosts.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DNSServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DNSServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ForeignResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ForeignResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MasterFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MasterFile.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +69,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684123911831</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="1.0">
+      <created>1684126996034</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684126996034</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -85,5 +93,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1.0" />
     <option name="LAST_COMMIT_MESSAGE" value="1.0" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ArrayIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

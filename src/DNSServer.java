@@ -41,7 +41,9 @@ public class DNSServer {
         if (address != null) {
             return new DNSResponse(query.getName(), query.getType(), address);
         } else {
-            return foreignResolver.resolve(query);
+            DNSResponse response = foreignResolver.resolve(query);
+            masterFile.addAddress(response.getName(), response.getAddress());
+            return response;
         }
     }
     /*
